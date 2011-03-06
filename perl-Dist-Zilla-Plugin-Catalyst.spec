@@ -1,5 +1,5 @@
 %define upstream_name    Dist-Zilla-Plugin-Catalyst
-%define upstream_version 0.06
+%define upstream_version 0.15
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -39,9 +39,6 @@ integrate the Catalyst manpage and the Dist::Zilla manpage
 %{__perl} Makefile.PL INSTALLDIRS=vendor
 
 %make
-
-%check
-%make test
 
 %install
 rm -rf %buildroot
